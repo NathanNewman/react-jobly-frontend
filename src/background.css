@@ -1,0 +1,13 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  min-height: 500px;
+  background: url("./images/background.jpg");
+}
+
+h1 {
+  color: white;
+}
