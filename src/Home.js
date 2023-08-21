@@ -34,7 +34,7 @@ function Home() {
           <div>
             <p className="text-white">All the jobs in one, convenient place.</p>
             <div className="button-group"></div>
-            <Button color="primary" href="/login">
+            <Button color="primary" onClick={()=>history.push("/login")}>
               Login
             </Button>
             <Button
