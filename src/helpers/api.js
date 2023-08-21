@@ -1,6 +1,7 @@
 import axios from "axios";
-
-const BASE_URL = "https://api.render.com/deploy/srv-ci2ra8rhp8u1a1bon7u0?key=tlGQahLqn0I";
+// const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
+const deployUrl="https://api.render.com/deploy/srv-ci2ra8rhp8u1a1bon7u0?key=tlGQahLqn0I";
+const BASE_URL = deployUrl;
 
 /** API Class.
  *

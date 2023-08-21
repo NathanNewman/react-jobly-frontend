@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import JoblyNavbar from "./JoblyNavbar";
 import Home from "./Home";
 import Forms from "./Forms";
@@ -10,7 +10,6 @@ import CompanyDetails from "./CompanyDetails";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
         <JoblyNavbar />
         <main>
           <Switch>
@@ -37,7 +36,6 @@ function App() {
             </Route>
           </Switch>
         </main>
-      </BrowserRouter>
     </div>
   );
 }
