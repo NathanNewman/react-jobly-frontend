@@ -16,7 +16,6 @@ class JoblyApi {
   static token;
 
   static async request(endpoint, data = {}, method = "get") {
-    console.debug("API Call:", endpoint, data, method);
     const token = localStorage.getItem("authenticated");
 
     //there are multiple ways to pass an authorization token, this is how you pass it in the header.
@@ -40,7 +39,6 @@ class JoblyApi {
   /** Get details on a company by handle. */
 
   static async getCompany(handle) {
-    console.log(handle);
     try {
       let res = await this.request(`companies/${handle}`);
       return res.company;

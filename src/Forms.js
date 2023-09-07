@@ -49,7 +49,6 @@ function Forms({ fields }) {
     try {
       const formType = fields[0].formType;
       const token = await handleSubmit(formData, formType);
-      console.log(token);
       if(token){
       setAuthenticated(token);
       history.push("/");
